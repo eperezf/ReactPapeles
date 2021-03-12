@@ -1,0 +1,13 @@
+{
+  "name": "reactpapeles-theme",
+  "version": "0.0.1",
+  "description": "ReactPapeles theme",
+  "keywords": [
+    "frontity",
+    "frontity-theme"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "frontity": "^1.14.2"
+  }
+}
