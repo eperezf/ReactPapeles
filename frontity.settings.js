@@ -2,9 +2,9 @@ const settings = {
   "name": "reactpapeles",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "url": "https://pisapapeles.net",
+      "title": "Pisapapeles",
+      "description": "Inteligencia en movimiento"
     }
   },
   "packages": [
@@ -45,7 +45,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "https://pisapapeles.net"
         }
       }
     },
