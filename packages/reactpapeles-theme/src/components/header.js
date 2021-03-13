@@ -1,6 +1,9 @@
 import React from "react"
 import {connect, styled} from "frontity"
 import Link from "@frontity/components/link"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons'
+import { faRss, faMoon, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const Header = ({state})=> {
   return(
@@ -16,7 +19,13 @@ const Header = ({state})=> {
           <MenuLink link="/juegos">JUEGOS</MenuLink>
         </Menu>
         <Social>
-          SOCIAL
+          <FontAwesomeIcon icon={faFacebook}/>
+          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faSpotify} />
+          <FontAwesomeIcon icon={faRss} />
+          <FontAwesomeIcon icon={faMoon} />
+          <FontAwesomeIcon icon={faSearch} />
         </Social>
       </HeaderContent>
     </HeaderBG>
@@ -82,4 +91,8 @@ const MenuLink = styled(Link)`
 
 const Social = styled.div`
   margin-left: auto;
+
+  svg {
+    margin-left: 15px;
+  }
 `
