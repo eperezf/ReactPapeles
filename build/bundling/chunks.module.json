@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "37bc6cd24cec9038cc24",
+  "hash": "1af07386f2c1450bad88",
   "publicPath": "/static/",
   "outputPath": "/Users/eperezf/Node/ReactPapeles/build/static",
   "assetsByChunkName": {
     "reactpapeles": [
       "reactpapeles.module.js",
-      "reactpapeles.9a9f7a638c583472c10c.hot-update.js"
+      "reactpapeles.3a2d87c350e7c6fcf67d.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "9a9f7a638c583472c10c.hot-update.json",
+      "name": "3a2d87c350e7c6fcf67d.hot-update.json",
       "size": 54,
       "chunks": [],
       "chunkNames": [],
@@ -24,8 +24,8 @@
       "emitted": false
     },
     {
-      "name": "reactpapeles.9a9f7a638c583472c10c.hot-update.js",
-      "size": 2139,
+      "name": "reactpapeles.3a2d87c350e7c6fcf67d.hot-update.js",
+      "size": 20427,
       "chunks": [
         "reactpapeles"
       ],
@@ -40,7 +40,7 @@
     },
     {
       "name": "reactpapeles.module.js",
-      "size": 6101782,
+      "size": 6210550,
       "chunks": [
         "reactpapeles"
       ],
@@ -59,7 +59,7 @@
       ],
       "assets": [
         "reactpapeles.module.js",
-        "reactpapeles.9a9f7a638c583472c10c.hot-update.js"
+        "reactpapeles.3a2d87c350e7c6fcf67d.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -72,7 +72,7 @@
       ],
       "assets": [
         "reactpapeles.module.js",
-        "reactpapeles.9a9f7a638c583472c10c.hot-update.js"
+        "reactpapeles.3a2d87c350e7c6fcf67d.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,15 +84,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1499482,
+      "size": 1540302,
       "names": [
         "reactpapeles"
       ],
       "files": [
         "reactpapeles.module.js",
-        "reactpapeles.9a9f7a638c583472c10c.hot-update.js"
+        "reactpapeles.3a2d87c350e7c6fcf67d.hot-update.js"
       ],
-      "hash": "ed41da4cfbd948f88123",
+      "hash": "9d7eca79de4966c700ee",
       "siblings": [],
       "parents": [],
       "children": [],
