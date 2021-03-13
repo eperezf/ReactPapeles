@@ -22,7 +22,25 @@ const Root = ({ state }) => {
               {item.type} – {item.id} – {item.link}
             </div>
           )
-      })}
+        })}
+      </Container>
+      <Container>
+        {data.items.map((item) => {
+          return (
+            <div key={item.id}>
+              {item.type} – {item.id} – {item.link}
+            </div>
+          )
+        })}
+      </Container>
+      <Container>
+        {data.items.map((item) => {
+          return (
+            <div key={item.id}>
+              {item.type} – {item.id} – {item.link}
+            </div>
+          )
+        })}
       </Container>
     </>
   )
@@ -34,6 +52,7 @@ const Container = styled.div`
   background-color: #141414;
   color: white;
   margin: 10px 10px;
+  width: auto;
 `
 
 const GlobalStyle = css`
