@@ -1,11 +1,4 @@
-const Root = () => {
-  return (
-    <>
-      Hola Pisapapeles!
-    </>
-  );
-};
-
+import Root from "./components"
 export default {
   name: "reactpapeles-theme",
   roots: {
