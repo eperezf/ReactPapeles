@@ -7,16 +7,16 @@ import { faRss, faMoon, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 const DesktopHeader = ({state}) => {
+  const {menu} = state.theme;
+  const isThereLinks = menu != null && menu.length > 0;
   return (
     <>
       <Logo src="https://static.pisapapeles.net/uploads/2019/03/logopp380x89.png"/>
       <Menu>
-        <MenuLink link="/noticias">NOTICIAS</MenuLink>
-        <MenuLink link="/reviews">REVIEWS</MenuLink>
-        <MenuLink link="/rumores">RUMORES</MenuLink>
-        <MenuLink link="/columnas">COLUMNAS</MenuLink>
-        <MenuLink link="/guias">GUÍAS</MenuLink>
-        <MenuLink link="/juegos">JUEGOS</MenuLink>
+        {isThereLinks &&
+          menu.map(([name,link])=>(
+            <MenuLink link={link}>{name}</MenuLink>
+          ))}
       </Menu>
       <Social>
         <FontAwesomeIcon icon={faFacebook}/>
@@ -50,6 +50,7 @@ const MenuLink = styled(Link)`
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 14px;
+  text-transform: uppercase;
 `
 
 const Social = styled.div`

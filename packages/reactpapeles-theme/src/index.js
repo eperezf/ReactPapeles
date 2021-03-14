@@ -5,7 +5,10 @@ export default {
     theme: Root
   },
   state: {
-    theme: {}
+    theme: {
+      autoPrefetch: "in-view",
+      menu: [],
+    }
   },
   actions: {
     theme: {}
