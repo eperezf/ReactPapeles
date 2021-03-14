@@ -4,29 +4,23 @@ import Link from "@frontity/components/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons'
 import { faRss, faMoon, faSearch } from '@fortawesome/free-solid-svg-icons'
+import {useMediaQuery} from 'react-responsive'
+import MediaQuery from 'react-responsive'
+import DesktopHeader from './desktop'
+import MobileHeader from './mobile'
 
 const Header = ({state})=> {
+  const isDesktop = useMediaQuery({query: '(min-width: 920px)'})
+  const isMobile = useMediaQuery({ query: '(max-width: 919px)' })
   return(
     <HeaderBG>
       <HeaderContent>
-        <Logo src="https://static.pisapapeles.net/uploads/2019/03/logopp380x89.png"/>
-        <Menu>
-          <MenuLink link="/noticias">NOTICIAS</MenuLink>
-          <MenuLink link="/reviews">REVIEWS</MenuLink>
-          <MenuLink link="/rumores">RUMORES</MenuLink>
-          <MenuLink link="/columnas">COLUMNAS</MenuLink>
-          <MenuLink link="/guias">GUÍAS</MenuLink>
-          <MenuLink link="/juegos">JUEGOS</MenuLink>
-        </Menu>
-        <Social>
-          <FontAwesomeIcon icon={faFacebook}/>
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faInstagram} />
-          <FontAwesomeIcon icon={faSpotify} />
-          <FontAwesomeIcon icon={faRss} />
-          <FontAwesomeIcon icon={faMoon} />
-          <FontAwesomeIcon icon={faSearch} />
-        </Social>
+        <MediaQuery minWidth={920}>
+          <DesktopHeader/>
+        </MediaQuery>
+        <MediaQuery maxWidth={919}>
+          <MobileHeader/>
+        </MediaQuery>
       </HeaderContent>
     </HeaderBG>
   )
@@ -45,7 +39,7 @@ const HeaderBG= styled.div`
     border-radius: 0px;
     margin: 0px 0px;
   }
-  @media(min-width: 992px){
+  @media(min-width: 930px){
     border-radius: 10px;
     margin: 10px 10px;
   }
@@ -69,30 +63,5 @@ const HeaderContent = styled.div`
   @media(min-width: 1210px){
     width: 1170px;
     margin: auto;
-  }
-`
-const Logo = styled.img`
-  height: 45px;
-  width: auto;
-`
-
-const Menu = styled.div`
-  display: flex;
-`
-
-const MenuLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-`
-
-const Social = styled.div`
-  margin-left: auto;
-
-  svg {
-    margin-left: 15px;
   }
 `

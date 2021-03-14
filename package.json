@@ -27,6 +27,7 @@
     "@frontity/tiny-router": "^1.4.0",
     "@frontity/wp-source": "^1.11.2",
     "frontity": "^1.14.2",
+    "react-responsive": "^8.2.0",
     "reactpapeles-theme": "file:packages/reactpapeles-theme"
   }
 }
