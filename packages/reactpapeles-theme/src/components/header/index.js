@@ -15,10 +15,10 @@ const Header = ({state})=> {
   return(
     <HeaderBG>
       <HeaderContent>
-        <MediaQuery minWidth={980}>
+        <MediaQuery minWidth={1000}>
           <DesktopHeader/>
         </MediaQuery>
-        <MediaQuery maxWidth={979}>
+        <MediaQuery maxWidth={999}>
           <MobileHeader/>
         </MediaQuery>
       </HeaderContent>
@@ -39,7 +39,7 @@ const HeaderBG= styled.div`
     border-radius: 0px;
     margin: 0px 0px;
   }
-  @media(min-width: 980px){
+  @media(min-width: 1000px){
     border-radius: 10px;
     margin: 10px 10px;
   }
@@ -59,7 +59,7 @@ const HeaderContent = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
-  margin: 0px 10px;
+  margin: 0px 20px;
   @media(min-width: 1210px){
     width: 1170px;
     margin: auto;

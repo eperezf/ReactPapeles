@@ -7,10 +7,15 @@ export default {
   state: {
     theme: {
       autoPrefetch: "in-view",
+      isMobileSearchVisible: false,
       menu: [],
     }
   },
   actions: {
-    theme: {}
+    theme: {
+      toggleMobileSearch: ({state})=> {
+        state.theme.isMobileSearchVisible = !state.theme.isMobileSearchVisible
+      }
+    }
   }
 };

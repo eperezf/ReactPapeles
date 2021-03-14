@@ -19,11 +19,21 @@ const DesktopHeader = ({state}) => {
           ))}
       </Menu>
       <Social>
-        <FontAwesomeIcon icon={faFacebook}/>
-        <FontAwesomeIcon icon={faTwitter} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faSpotify} />
-        <FontAwesomeIcon icon={faRss} />
+        <Link link="https://facebook.com/pisapapeles">
+          <FontAwesomeIcon icon={faFacebook}/>
+        </Link>
+        <Link link="https://twitter.com/pisapapeles">
+          <FontAwesomeIcon icon={faTwitter} />
+        </Link>
+        <Link link="https://instragram.com/pisapapeles">
+          <FontAwesomeIcon icon={faInstagram} />
+        </Link>
+        <Link link="#">
+          <FontAwesomeIcon icon={faSpotify} />
+        </Link>
+        <Link link="https://pisapapeles.net/rss">
+          <FontAwesomeIcon icon={faRss} />
+        </Link>
         <FontAwesomeIcon icon={faMoon} />
         <FontAwesomeIcon icon={faSearch} />
       </Social>
@@ -58,5 +68,10 @@ const Social = styled.div`
 
   svg {
     margin-left: 15px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 `
