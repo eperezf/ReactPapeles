@@ -1,20 +1,25 @@
-const Root = () => {
-  return (
-    <>
-      Hola Pisapapeles!
-    </>
-  );
-};
-
+import Root from "./components"
 export default {
   name: "reactpapeles-theme",
   roots: {
     theme: Root
   },
   state: {
-    theme: {}
+    theme: {
+      autoPrefetch: "in-view",
+      isMobileSearchVisible: false,
+      isMobileMenuVisible: false,
+      menu: [],
+    }
   },
   actions: {
-    theme: {}
+    theme: {
+      toggleMobileSearch: ({state})=> {
+        state.theme.isMobileSearchVisible = !state.theme.isMobileSearchVisible
+      },
+      toggleMobileMenu: ({state})=> {
+        state.theme.isMobileMenuVisible = !state.theme.isMobileMenuVisible
+      }
+    }
   }
 };

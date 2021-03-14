@@ -9,7 +9,19 @@ const settings = {
   },
   "packages": [
     {
-      "name": "reactpapeles-theme"
+      name: "reactpapeles-theme",
+      state: {
+        theme: {
+          menu: [
+            ["Noticias", "/noticias"],
+            ["Reviews", "/reviews"],
+            ["Rumores", "/rumores"],
+            ["Columnas", "/columna"],
+            ["Guías", "/guias"],
+            ["Juegos", "/juegos"],
+          ]
+        }
+      }
     },
     {
       "name": "@frontity/wp-source",
