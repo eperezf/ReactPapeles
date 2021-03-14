@@ -5,6 +5,7 @@ import { connect, Global, css, styled, Head} from "frontity"
 import Link from "@frontity/components/link"
 import Header from "./header/index"
 import MobileSearch from "./header/mobileSearch"
+import MobileMenu from "./header/mobileMenu"
 import { useMediaQuery } from 'react-responsive'
 
 const Root = ({ state }) => {
@@ -61,6 +62,9 @@ const Root = ({ state }) => {
       </Container>
       {state.theme.isMobileSearchVisible ? (
         <MobileSearch/>
+      ): null}
+      {state.theme.isMobileMenuVisible ? (
+        <MobileMenu/>
       ): null}
     </>
   )

@@ -15,7 +15,7 @@ const MobileHeader = ({state, actions}) => {
       <Logo src="https://static.pisapapeles.net/uploads/2019/03/logopp380x89.png"/>
       <MenuIconR>
         <FontAwesomeIcon icon={faMoon} />
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faBars} onClick={actions.theme.toggleMobileMenu}/>
       </MenuIconR>
     </>
   )

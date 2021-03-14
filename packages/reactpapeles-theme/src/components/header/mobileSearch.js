@@ -3,7 +3,7 @@ import {connect, styled} from "frontity"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
-const MobileSearch = ({state, actions}) => {
+const MobileMenu = ({state, actions}) => {
   return (
     <>
       <SearchModal>
@@ -29,7 +29,7 @@ const SearchModal = styled.div`
   color: white;
   display: flex;
 `
-export default connect(MobileSearch)
+export default connect(MobileMenu)
 
 const SearchInput = styled.input`
   width: 80%;
@@ -41,8 +41,8 @@ const SearchInput = styled.input`
 `
 
 const CloseIcon = styled(FontAwesomeIcon)`
-  font-size:45px;
+  font-size:30px;
   position:absolute;
-  top: 30px;
-  right: 30px;
+  top: 25px;
+  right: 20px;
 `

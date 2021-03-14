@@ -15,7 +15,7 @@ const DesktopHeader = ({state}) => {
       <Menu>
         {isThereLinks &&
           menu.map(([name,link])=>(
-            <MenuLink link={link}>{name}</MenuLink>
+            <MenuLink link={link} key={name}>{name}</MenuLink>
           ))}
       </Menu>
       <Social>

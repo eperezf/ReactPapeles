@@ -8,6 +8,7 @@ export default {
     theme: {
       autoPrefetch: "in-view",
       isMobileSearchVisible: false,
+      isMobileMenuVisible: false,
       menu: [],
     }
   },
@@ -15,6 +16,9 @@ export default {
     theme: {
       toggleMobileSearch: ({state})=> {
         state.theme.isMobileSearchVisible = !state.theme.isMobileSearchVisible
+      },
+      toggleMobileMenu: ({state})=> {
+        state.theme.isMobileMenuVisible = !state.theme.isMobileMenuVisible
       }
     }
   }
