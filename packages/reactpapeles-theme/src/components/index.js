@@ -26,13 +26,11 @@ const Root = ({ state }) => {
       </Head>
       <Global styles={GlobalStyle}/>
       <Header />
-      <Container>
-        <Switch>
-          <IndexBody when={data.isArchive} />
-          <div when={data.isPost}>This is a post</div>
-          <div when={data.isPage}>This is a page</div>
-        </Switch>
-      </Container>
+      <Switch>
+        <IndexBody when={data.isArchive} />
+        <div when={data.isPost}>This is a post</div>
+        <div when={data.isPage}>This is a page</div>
+      </Switch>
       <Container>
         {isDesktop && <p>You are a desktop or laptop</p>}
         {isMobile && <p>You are a tablet or mobile phone</p>}
@@ -76,7 +74,7 @@ const Container = styled.div`
 `
 
 const GlobalStyle = css`
-  @import url('https://fonts.googleapis.com/css?family=Poppins');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
   html {
 
   }
